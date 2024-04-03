@@ -1,0 +1,26 @@
+---
+const pathname = new URL(Astro.request.url).pathname;
+---
+
+<nav class="text-white py-12 flex flex-row gap-4">
+    <a 
+        class:list={[{
+            'font-regular': pathname === "/",
+            'font-light': pathname !== "/",
+            'text-gray-400': pathname !== "/"
+        }]}
+        href="/"
+    >
+        home
+    </a>
+    <a 
+        class:list={[{
+            'font-regular': pathname === "/profile",
+            'font-light': pathname !== "/profile",
+            'text-gray-400': pathname !== "/profile"
+        }]} 
+        href="/profile"
+    >
+        profile
+    </a>
+</nav>
