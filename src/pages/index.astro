@@ -10,22 +10,20 @@ import Layout from '../layouts/Layout.astro';
         <h2 class="text-lg font-light text-gray-400 mb-6">
             Bellow you can see some of my personal projects and my experience, let's work together!
         </h2>
-        <a href="/profile">About me</a>
+        <a href="/profile" class="underline text-gray-300">About me</a>
     </header>
-    <section class="mt-16">
+    <section class="mt-16 mb-4">
         <h2 class="text-lg mb-5">Experience and projects</h2>
-        <div class="grid grid-cols-2 md:grid-cols-5 auto-rows-max w-full gap-4">
-            <div class="col-span-2 h-52 md:col-span-3 rounded-md bg-slate-500 overflow-hidden">
+        <div class="w-full flex gap-4 h-52 mb-4">
+            <a class="h-full grow rounded-md overflow-hidden" href="/projects/kimple">
                 <img class="object-cover w-full h-full" src="/kimple.png" alt="Colors">
-            </div>
-            <div class="h-32 md:h-52 md:col-span-2 rounded-md bg-slate-500 overflow-hidden">
-                <img class="object-cover w-full h-full" src="/trello.png" alt="Trello clone">
-            </div>
-            <div class="h-32 md:col-span-2 rounded-md bg-slate-500 overflow-hidden">
-            </div>
-            <div class="col-span-2 h-32 md:col-span-3 rounded-md bg-slate-500 overflow-hidden">
-                <img class="object-cover w-full h-full" src="/colors.png" alt="Colors">
-            </div>
+            </a>
+            <a class="h-full rounded-md overflow-hidden" href="/projects/trello-clone">
+                <img class="object-cover w-full h-full" src="/trello.png" alt="Trello clone" >
+            </a>
         </div>
+        <a class="w-full h-32 block" href="/projects/colors">
+            <img class="object-cover rounded-md w-full h-full" src="/colors.png" alt="Colors">
+        </a>
     </section>
 </Layout>
