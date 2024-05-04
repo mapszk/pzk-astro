@@ -1,5 +1,5 @@
 ---
-const pathname = new URL(Astro.request.url).pathname;
+const pathname = Astro.url.pathname;
 ---
 
 <nav class="text-white py-12 flex flex-row gap-4">
