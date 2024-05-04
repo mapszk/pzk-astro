@@ -3,7 +3,6 @@ const pathname = Astro.url.pathname;
 ---
 
 <nav class="text-white py-12 flex flex-row gap-4">
-    <pre>{Astro.url.pathname}</pre>
     <a 
         class:list={[{
             'font-regular': pathname === "/",
@@ -16,9 +15,9 @@ const pathname = Astro.url.pathname;
     </a>
     <a 
         class:list={[{
-            'font-regular': pathname === "/profile",
-            'font-light': pathname !== "/profile",
-            'text-gray-400': pathname !== "/profile"
+            'font-regular': pathname === "/profile/",
+            'font-light': pathname !== "/profile/",
+            'text-gray-400': pathname !== "/profile/"
         }]} 
         href="/profile"
     >
