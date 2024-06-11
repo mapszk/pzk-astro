@@ -14,16 +14,46 @@ import Layout from '../layouts/Layout.astro';
     </header>
     <section class="mt-16 mb-4">
         <h2 class="text-lg mb-5">Experience and projects</h2>
-        <div class="w-full flex gap-4 h-52 mb-4">
-            <a class="h-full grow rounded-md overflow-hidden" href="/projects/kimple">
+        <div class="md:hidden flex flex-col gap-4">
+            <a class="w-full h-32 block rounded-md overflow-hidden" href="/projects/kimple">
                 <img class="object-cover w-full h-full" src="/kimple.png" alt="Colors">
             </a>
-            <a class="h-full rounded-md overflow-hidden" href="/projects/trello-clone">
+            <a class="w-full h-32 block rounded-md overflow-hidden" href="/projects/rate-your-play">
+                <img class="object-cover rounded-md w-full h-full" src="/ryp1.png" alt="Rate your play">
+            </a>
+            <a class="w-full h-32 block rounded-md overflow-hidden" href="/projects/trello-clone">
                 <img class="object-cover w-full h-full" src="/trello.png" alt="Trello clone" >
             </a>
+            <a class="w-full h-32 block rounded-md overflow-hidden" href="/projects/colors">
+                <img class="object-cover rounded-md w-full h-full" src="/colors.png" alt="Colors">
+            </a>
         </div>
-        <a class="w-full h-32 block" href="/projects/colors">
-            <img class="object-cover rounded-md w-full h-full" src="/colors.png" alt="Colors">
-        </a>
+
+        <div class="w-full hidden md:grid projects-grid gap-4 mb-4">
+            <a class="div1 h-52 rounded-md overflow-hidden" href="/projects/kimple">
+                <img class="object-cover w-full h-full" src="/kimple.png" alt="Colors">
+            </a>
+            <a class="div2 h-52 rounded-md overflow-hidden" href="/projects/rate-your-play">
+                <img class="object-cover rounded-md w-full h-full" src="/ryp1.png" alt="Rate your play">
+            </a>
+            <a class="div3 h-36 rounded-md overflow-hidden" href="/projects/trello-clone">
+                <img class="object-cover w-full h-full" src="/trello.png" alt="Trello clone" >
+            </a>
+            <a class="div4 h-36 rounded-md ovreflow-hidden" href="/projects/colors">
+                <img class="object-cover rounded-md w-full h-full" src="/colors.png" alt="Colors">
+            </a>
+        </div>
     </section>
 </Layout>
+
+<style scoped>
+.projects-grid {
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.div1 { grid-area: 1 / 1 / 4 / 5; }
+.div2 { grid-area: 1 / 5 / 4 / 8; }
+.div3 { grid-area: 4 / 1 / 7 / 4; }
+.div4 { grid-area: 4 / 4 / 7 / 8; }
+</style>
