@@ -1,4 +1,5 @@
 ---
+import Tag from "../../components/Tag.astro";
 import Layout from "../../layouts/Layout.astro";
 
 ---
@@ -9,6 +10,12 @@ import Layout from "../../layouts/Layout.astro";
         <a class="underline text-gray-400" href="https://rateyourplay.vercel.app/welcome" target="_blank" rel="noreferrer noopener">Visit</a>
     </nav>
     <section class="flex flex-col gap-8 mb-12">
+        <div class="flex gap-2">
+            <Tag>Javascript</Tag>
+            <Tag>React</Tag>
+            <Tag>TailwindCSS</Tag>
+            <Tag>Firebase</Tag>
+        </div>
         <p class="text-gray-400">
             Rate Your Play is a clone of Letterboxd, but instead of movies is about games, a website where you can review and rate games you've played. This website is created with React, and manage most of the styles with Tailwind. The database and authetication method is provided by Firebase.
         </p>
