@@ -1,17 +1,11 @@
 ---
 import Tag from "../../components/Tag.astro";
 import Layout from "../../layouts/Layout.astro";
+import Button from "../../components/Button.astro";
 
 ---
 
 <Layout title="Martin Pilaszek - Trello clone">
-    <!-- <nav class="text-gray-400 bg-[#131313] py-6 flex justify-between flex-row gap-6">
-        <a class="underline text-gray-400" href="/">Back</a>
-        <div class="flex items-center gap-6">
-            <a class="underline text-gray-400" href="https://github.com/mapszk/trello-vue" target="_blank" rel="noreferrer noopener">Code</a>
-            <a class="underline text-gray-400" href="https://trello-vue-ten.vercel.app" target="_blank" rel="noreferrer noopener">Visit</a>
-        </div>
-    </nav> -->
     <section class="flex flex-col gap-8 mb-12">
         <div class="flex gap-2 flex-wrap">
             <Tag>Javascript</Tag>
@@ -25,5 +19,17 @@ import Layout from "../../layouts/Layout.astro";
         <img src="/trello-1.png" alt="Trello" class="w-full h-64 object-cover">
         <img src="/trello-2.png" alt="Trello" class="w-full h-64 object-cover">
         <img src="/trello-3.png" alt="Trello" class="w-full h-64 object-cover">
+        <div class="flex justify-end gap-4">
+            <a href="https://github.com/mapszk/trello-vue" target="_blank" rel="noreferrer noopener">
+                <Button>
+                    Code
+                </Button>
+            </a>
+            <a href="https://trello-vue-ten.vercel.app" target="_blank" rel="noreferrer noopener">
+                <Button>
+                    Visit
+                </Button>
+            </a>
+        </div>
     </section>
 </Layout>

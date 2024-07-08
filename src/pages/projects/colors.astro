@@ -1,17 +1,11 @@
 ---
 import Tag from "../../components/Tag.astro";
+import Button from "../../components/Button.astro";
 import Layout from "../../layouts/Layout.astro";
 
 ---
 
 <Layout title="Martin Pilaszek - Colors">
-    <!-- <nav class="text-gray-400 bg-[#131313] py-6 flex justify-between flex-row gap-6">
-        <a class="underline" href="/">Back</a>
-        <div class="flex items-center gap-6">
-            <a class="underline text-gray-400" href="https://github.com/mapszk/colors" target="_blank" rel="noreferrer noopener">Code</a>
-            <a class="underline" href="https://colors-smoky-ten.vercel.app" target="_blank" rel="noreferrer noopener">Visit</a>
-        </div>
-    </nav> -->
     <section class="flex flex-col gap-8 mb-12">
         <div class="flex gap-2 flex-wrap">
             <Tag>Javascript</Tag>
@@ -24,5 +18,17 @@ import Layout from "../../layouts/Layout.astro";
         </p>
         <img src="/colors-1.png" alt="Colors" class="w-full h-64 object-cover">
         <img src="/colors-2.png" alt="Colors" class="w-full h-64 object-cover">
+        <div class="flex justify-end gap-4">
+            <a href="https://github.com/mapszk/colors" target="_blank" rel="noreferrer noopener">
+                <Button>
+                    Code
+                </Button>
+            </a>
+            <a href="https://colors-smoky-ten.vercel.app" target="_blank" rel="noreferrer noopener">
+                <Button>
+                    Visit
+                </Button>
+            </a>
+        </div>
     </section>
 </Layout>

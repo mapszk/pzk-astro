@@ -1,17 +1,11 @@
 ---
 import Tag from "../../components/Tag.astro";
 import Layout from "../../layouts/Layout.astro";
+import Button from "../../components/Button.astro";
 
 ---
 
 <Layout title="Martin Pilaszek - Rate Your Play">
-    <!-- <nav class="text-gray-400 bg-[#131313] py-6 flex justify-between flex-row gap-6">
-        <a class="underline text-gray-400" href="/">Back</a>
-        <div class="flex items-center gap-6">
-            <a class="underline text-gray-400" href="https://github.com/mapszk/rate-your-play" target="_blank" rel="noreferrer noopener">Code</a>
-            <a class="underline text-gray-400" href="https://rateyourplay.vercel.app/welcome" target="_blank" rel="noreferrer noopener">Visit</a>
-        </div>
-    </nav> -->
     <section class="flex flex-col gap-8 mb-12">
         <div class="flex gap-2 flex-wrap">
             <Tag>Javascript</Tag>
@@ -25,5 +19,17 @@ import Layout from "../../layouts/Layout.astro";
         <img src="/ryp1.png" alt="Rate your play welcome page" class="w-full h-64 object-cover">
         <img src="/ryp2.png" alt="Rate your play movie page" class="w-full h-64 object-cover">
         <img src="/ryp3.png" alt="Rate your play profile page" class="w-full h-64 object-cover">
+        <div class="flex justify-end gap-4">
+            <a href="https://github.com/mapszk/rate-your-play" target="_blank" rel="noreferrer noopener">
+                <Button>
+                    Code
+                </Button>
+            </a>
+            <a href="https://rateyourplay.vercel.app/welcome" target="_blank" rel="noreferrer noopener">
+                <Button>
+                    Visit
+                </Button>
+            </a>
+        </div>
     </section>
 </Layout>

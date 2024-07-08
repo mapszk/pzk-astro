@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Button from "../components/Button.astro"
 ---
 
 <Layout title="Martin Pilaszek - Developer">
-    <!-- <div class="invisible absolute top-0" id="home"></div> -->
+    <div class="invisible absolute top-0" id="home"></div>
 
     <header class="py-3 pt-6">
         <h1 class="text-2xl font-light">
@@ -92,15 +93,21 @@ import Layout from '../layouts/Layout.astro';
     </section>
     <section class="mb-12" id="contactme">
         <h2 class="text-2xl mb-4">Contact me</h2>
-        <div class="flex flex-row items-center gap-8">
-            <a class="flex text-gray-400 underline" href="mailto:martinpilaszek@gmail.com">
-                Email
+        <div class="flex flex-row items-center gap-4">
+            <a class="flex text-gray-400" href="mailto:martinpilaszek@gmail.com">
+                <Button>
+                    Email
+                </Button>
             </a>
-            <a class="flex text-gray-400 underline" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/martinpilaszek/">
-                Linkedin
+            <a class="flex text-gray-400" target="_blank" rel="noreferrer noopener" href="https://www.linkedin.com/in/martinpilaszek/">
+                <Button>
+                    LinkedIn
+                </Button>
             </a>
-            <a class="flex text-gray-400 underline" target="_blank" rel="noreferrer noopener" href="https://github.com/mapszk">
-                Github
+            <a class="flex text-gray-400" target="_blank" rel="noreferrer noopener" href="https://github.com/mapszk">
+                <Button>
+                    GitHub
+                </Button>
             </a>
         </div>
     </section>

@@ -1,14 +1,11 @@
 ---
 import Tag from "../../components/Tag.astro";
+import Button from "../../components/Button.astro";
 import Layout from "../../layouts/Layout.astro";
 
 ---
 
 <Layout title="Martin Pilaszek - Kimple">
-    <!-- <nav class="text-gray-400 bg-[#131313] py-6 flex justify-between flex-row gap-6">
-        <a class="underline text-gray-400" href="/">Back</a>
-        <a class="underline text-gray-400" href="https://edukimple.com" target="_blank" rel="noreferrer noopener">Visit</a>
-    </nav> -->
     <section class="flex flex-col gap-8 mb-12">
         <div class="flex gap-2 flex-wrap">
             <Tag>Javascript</Tag>
@@ -32,5 +29,12 @@ import Layout from "../../layouts/Layout.astro";
         </p>
         <img src="/kimple-3.png" alt="colors" class="w-full h-64 object-cover">
         <img src="/kimple-5.png" alt="colors" class="w-full h-64 object-cover">
+        <div class="flex justify-end gap-4">
+            <a href="https://edukimple.com" target="_blank" rel="noreferrer noopener">
+                <Button>
+                    Visit
+                </Button>
+            </a>
+        </div>
     </section>
 </Layout>
