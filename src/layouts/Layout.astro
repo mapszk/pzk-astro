@@ -1,5 +1,6 @@
 ---
 import '@fontsource-variable/epilogue';
+import Navbar from "../components/Navbar.astro"
 interface Props {
 	title: string;
 }
@@ -20,6 +21,7 @@ const { title } = Astro.props;
 	</head>
 	<body>
 		<main class="w-11/12 max-w-[720px] mx-auto">
+			<Navbar />
 			<slot />
 		</main>
 	</body>
