@@ -8,7 +8,12 @@
 
 <script>
     const button = document.getElementById("toggle-theme-button")
-    button?.addEventListener("click", () => {
+    
+    const toggleTheme = () => {
+        const previousTheme = localStorage.getItem("theme") || "dark"
         document.documentElement.classList.toggle("dark")
-    })
+        localStorage.setItem("theme", previousTheme === "light" ? "dark" : "light")
+    }
+    
+    button?.addEventListener("click", toggleTheme)
 </script>
