@@ -9,7 +9,7 @@ const { title } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" data-xmlns="http://www.w3.org/1999/xhtml" data-xmlns:fb="http://ogp.me/ns/fb#">
+<html lang="en" class="dark" data-xmlns="http://www.w3.org/1999/xhtml" data-xmlns:fb="http://ogp.me/ns/fb#">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Hi👋 I'm Martin Pilaszek, a front-end developer with +2 years of experience, passionate by techonlogy, design and pretty web experiences." />
@@ -19,7 +19,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-slate-100 dark:bg-[#131313]">
 		<main class="w-11/12 max-w-[720px] mx-auto">
 			<Navbar />
 			<slot />
@@ -40,9 +40,6 @@ const { title } = Astro.props;
 	}
 	html {
 		font-family: 'Epilogue Variable', system-ui, sans-serif;
-		background: #131313;
-		background-size: 224px;
-		color-scheme: dark;
 	}
 	code {
 		font-family:

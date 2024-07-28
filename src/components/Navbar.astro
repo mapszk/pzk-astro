@@ -1,5 +1,10 @@
-<nav class="text-white shadow-xl bg-zinc-800/60 backdrop-blur-sm rounded-xl py-4 mt-3 mb-8 flex justify-center gap-6 sticky top-3">
+---
+import ThemeButton from "./ThemeButton.astro";
+---
+
+<nav class="dark:text-white shadow-xl bg-zinc-100/60 dark:bg-zinc-800/60 backdrop-blur-sm rounded-xl py-4 px-6 mt-3 mb-8 flex items-center gap-6 sticky top-3">
     <a href="/">Home</a>
     <a href="/#aboutme">About me</a>
     <a href="/#contactme">Contact me</a>
+    <ThemeButton />
 </nav>
